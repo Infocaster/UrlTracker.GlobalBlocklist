@@ -26,6 +26,7 @@
 	<ItemGroup>
 		<PackageReference Include="Umbraco.Cms.Web.Website" Version="10.0.1" />
 		<PackageReference Include="Umbraco.Cms.Web.BackOffice" Version="10.0.1" />
+		<PackageReference Include="UrlTracker" Version="10.0.2" />
 	</ItemGroup>
 
 	<ItemGroup>
