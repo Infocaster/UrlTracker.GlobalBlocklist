@@ -1,13 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Threading.Tasks;
+using UrlTracker.GlobalBlocklist.Models;
 
 namespace UrlTracker.GlobalBlocklist.Services
 {
     public interface IRetreiveBlocklistService
     {
-        Task<List<string>> GetItemsFromBlocklist();
+        Task<GlobalSettings> GetGlobalSettings();
     }
 }

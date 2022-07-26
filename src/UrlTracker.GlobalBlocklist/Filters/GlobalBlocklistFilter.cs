@@ -32,14 +32,14 @@ namespace UrlTracker.GlobalBlocklist.Filters
             //TODO: defensive programming!
             if (blockedItems.Count == 0)
             {
-                blockedItems = await _retreiveBlocklistService.GetItemsFromBlocklist();
+                var globalSettings = await _retreiveBlocklistService.GetGlobalSettings();
+                blockedItems = globalSettings.GlobalBlocklist;
 
                 var cacheEntryOptions = new MemoryCacheEntryOptions()
                     .SetAbsoluteExpiration(TimeSpan.FromHours(24));
 
                 _memoryCache.Set(Defaults.Cache.CacheKey, blockedItems, cacheEntryOptions);
             }
-
 
             foreach (var item in blockedItems)
             {
