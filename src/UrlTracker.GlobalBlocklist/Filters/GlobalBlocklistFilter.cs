@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using System.Threading.Tasks.Sources;
 using Microsoft.Extensions.Caching.Memory;
 using UrlTracker.GlobalBlocklist.Services;
 using UrlTracker.Web.Events.Models;
@@ -29,8 +28,7 @@ namespace UrlTracker.GlobalBlocklist.Filters
 
             var blockedItems = _memoryCache.Get<List<string>>(Defaults.Cache.CacheKey);
 
-            //TODO: defensive programming!
-            if (blockedItems.Count == 0)
+            if (blockedItems == null)
             {
                 var globalSettings = await _retreiveBlocklistService.GetGlobalSettings();
                 blockedItems = globalSettings.GlobalBlocklist;
