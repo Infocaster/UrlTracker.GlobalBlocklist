@@ -4,7 +4,7 @@
     {
         public static class Blocklist
         {
-            public const string BlocklistUrl = "https://github.com/Infocaster/.github/blob/main/UrlTracker_globalSettings.json";
+            public const string BlocklistUrl = "https://raw.githubusercontent.com/Infocaster/.github/main/UrlTracker_globalSettings.json";
         }
     }
     
