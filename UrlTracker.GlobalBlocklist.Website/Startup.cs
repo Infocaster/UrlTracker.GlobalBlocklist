@@ -1,3 +1,5 @@
+using UrlTracker.GlobalBlocklist.Website.Middleware;
+
 namespace UrlTracker.GlobalBlocklist.Website
 {
     public class Startup
@@ -53,6 +55,7 @@ namespace UrlTracker.GlobalBlocklist.Website
                 {
                     u.UseBackOffice();
                     u.UseWebsite();
+                    u.AppBuilder.UseAutomatedBackOfficeAuthentication();
                 })
                 .WithEndpoints(u =>
                 {
