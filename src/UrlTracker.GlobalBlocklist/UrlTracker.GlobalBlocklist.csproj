@@ -15,7 +15,7 @@
 		<RootNamespace>UrlTracker.GlobalBlocklist</RootNamespace>
 		<Copyright>Copyright © Infocaster 2022</Copyright>
 		<PackageProjectUrl>https://github.com/infocaster/urktrackerglobalblocklist</PackageProjectUrl>
-		<!--<PackageIcon>infocaster_nuget_pink.png</PackageIcon>-->
+		<PackageIcon>infocaster_nuget_pink.png</PackageIcon>
 		<PackageReadmeFile>README-NUGET.md</PackageReadmeFile>
 		<RepositoryUrl>https://github.com/infocaster/urktrackerglobalblocklist</RepositoryUrl>
 		<PackageReleaseNotes>First release for Umbraco 10</PackageReleaseNotes>
@@ -26,6 +26,7 @@
 	<ItemGroup>
 		<PackageReference Include="Umbraco.Cms.Web.Website" Version="10.0.1" />
 		<PackageReference Include="Umbraco.Cms.Web.BackOffice" Version="10.0.1" />
+		<PackageReference Include="UrlTracker" Version="10.0.2" />
 	</ItemGroup>
 
 	<ItemGroup>
@@ -38,6 +39,10 @@
 			<PackagePath>\</PackagePath>
 		</None>
 		<None Include="..\..\readme.txt">
+			<Pack>True</Pack>
+			<PackagePath>\</PackagePath>
+		</None>
+		<None Include="..\..\infocaster_nuget_pink.png">
 			<Pack>True</Pack>
 			<PackagePath>\</PackagePath>
 		</None>
