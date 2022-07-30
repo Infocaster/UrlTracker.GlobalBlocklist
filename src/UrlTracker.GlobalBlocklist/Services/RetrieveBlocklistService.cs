@@ -2,25 +2,24 @@
 using System.Threading.Tasks;
 using Newtonsoft.Json;
 using UrlTracker.GlobalBlocklist.Models;
+using System.Text.Json;
 
 namespace UrlTracker.GlobalBlocklist.Services
 {
-    public class RetreiveBlocklistService : IRetreiveBlocklistService
+    public class RetrieveBlocklistService : IRetrieveBlocklistService
     {
-        private readonly IHttpClientFactory _httpClientFactory;
+        private readonly HttpClient _httpClient;
 
-        public RetreiveBlocklistService(IHttpClientFactory httpClientFactory)
+        public RetrieveBlocklistService(HttpClient httpClient)
         {
-            _httpClientFactory = httpClientFactory;
+            _httpClient = httpClient;
         }
 
         public async Task<GlobalSettings> GetGlobalSettings()
         {
-            var _client = _httpClientFactory.CreateClient();
-            var result = await _client.GetAsync(Defaults.Blocklist.BlocklistUrl);
+            var result = await _httpClient.GetAsync(Defaults.Blocklist.BlocklistUrl);
             result.EnsureSuccessStatusCode();
             var content = await result.Content.ReadAsStringAsync();
-
             return JsonConvert.DeserializeObject<GlobalSettings>(content);
         }
     }

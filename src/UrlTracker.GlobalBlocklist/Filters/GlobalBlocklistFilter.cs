@@ -11,9 +11,9 @@ namespace UrlTracker.GlobalBlocklist.Filters
     public class GlobalBlocklistFilter : IClientErrorFilter
     {
         private readonly IMemoryCache _memoryCache;
-        private readonly IRetreiveBlocklistService _retreiveBlocklistService;
+        private readonly IRetrieveBlocklistService _retreiveBlocklistService;
 
-        public GlobalBlocklistFilter(IMemoryCache memoryCache, IRetreiveBlocklistService retreiveBlocklistService)
+        public GlobalBlocklistFilter(IMemoryCache memoryCache, IRetrieveBlocklistService retreiveBlocklistService)
         {
             _memoryCache = memoryCache;
             _retreiveBlocklistService = retreiveBlocklistService;
