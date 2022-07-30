@@ -21,8 +21,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{D5E00642-0A6D-41C0-A036-27C4CB587CFC}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UrlTracker.GlobalBlocklist.Tests", "UrlTracker.GlobalBlocklist.Tests\UrlTracker.GlobalBlocklist.Tests.csproj", "{CDC3C51F-91B5-424A-8FD1-0E272D7075EA}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UrlTracker.GlobalBlocklist.Website", "UrlTracker.GlobalBlocklist.Website\UrlTracker.GlobalBlocklist.Website.csproj", "{622EF6D3-3D5C-4CE6-9050-A2DFDF00FB77}"
 EndProject
 Global
@@ -35,10 +33,6 @@ Global
 		{F936C692-CB32-4B26-A0D1-29A560B8DF11}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F936C692-CB32-4B26-A0D1-29A560B8DF11}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F936C692-CB32-4B26-A0D1-29A560B8DF11}.Release|Any CPU.Build.0 = Release|Any CPU
-		{CDC3C51F-91B5-424A-8FD1-0E272D7075EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{CDC3C51F-91B5-424A-8FD1-0E272D7075EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{CDC3C51F-91B5-424A-8FD1-0E272D7075EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{CDC3C51F-91B5-424A-8FD1-0E272D7075EA}.Release|Any CPU.Build.0 = Release|Any CPU
 		{622EF6D3-3D5C-4CE6-9050-A2DFDF00FB77}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{622EF6D3-3D5C-4CE6-9050-A2DFDF00FB77}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{622EF6D3-3D5C-4CE6-9050-A2DFDF00FB77}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -48,7 +42,6 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{CDC3C51F-91B5-424A-8FD1-0E272D7075EA} = {D5E00642-0A6D-41C0-A036-27C4CB587CFC}
 		{622EF6D3-3D5C-4CE6-9050-A2DFDF00FB77} = {D5E00642-0A6D-41C0-A036-27C4CB587CFC}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
