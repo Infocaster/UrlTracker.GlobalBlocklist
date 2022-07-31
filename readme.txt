@@ -14,4 +14,4 @@ With this extension the most common spam requests will be ignored in the UrlTrac
 For more information, check out the instructions on GitHub:
 https://github.com/Infocaster/UrlTracker.GlobalBlocklist
 
-The list can be found at: https://github.com/Infocaster/.github/blob/main/UrlTracker_globalSettings.json. Please feel free to contribute if you feel that an url is missing!
+The list can be found at: https://github.com/Infocaster/UrlTracker.GlobalSettings/blob/main/UrlTracker_globalSettings.json. Please feel free to contribute if you feel that an url is missing!

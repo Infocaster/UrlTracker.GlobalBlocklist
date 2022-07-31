@@ -14,7 +14,7 @@ The UrlTracker.GlobalBlocklist package requires an installation of the UrlTracke
 
 
 ## Getting started
-There is no configuration required to start using this package. By installing the package a filter is added that retreives the global [list](https://github.com/Infocaster/.github/blob/main/UrlTracker_globalSettings.json).
+There is no configuration required to start using this package. By installing the package a filter is added that retreives the global [list](https://github.com/Infocaster/UrlTracker.GlobalSettings/blob/main/UrlTracker_globalSettings.json).
 
 We have tried to include as many items as possible in this list but if you feel that something is missing we highly encourage you to create a pull request so it can be added.
 
