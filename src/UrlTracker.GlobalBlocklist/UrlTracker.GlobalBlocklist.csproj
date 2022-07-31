@@ -1,0 +1,50 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<TargetFramework>net6.0</TargetFramework>
+		<GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+		<ContentTargetFolders>.</ContentTargetFolders>
+		<PackageId>UrlTracker.GlobalBlocklist</PackageId>
+		<Title>UrlTracker.GlobalBlocklist</Title>
+		<Description>
+			The global blocklist provides an extra filter for the UrlTracker that retreives a global list from GitHub and adds it as a filter.
+		</Description>
+		<Product>UrlTracker.GlobalBlocklist</Product>
+		<Authors>Infocaster B.V.</Authors>
+		<PackageTags>umbraco plugin package urltracker net6 contentmanagement CMS</PackageTags>
+		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+		<RootNamespace>UrlTracker.GlobalBlocklist</RootNamespace>
+		<Copyright>Copyright © Infocaster 2022</Copyright>
+		<PackageProjectUrl>https://github.com/infocaster/urktrackerglobalblocklist</PackageProjectUrl>
+		<PackageIcon>infocaster_nuget_pink.png</PackageIcon>
+		<PackageReadmeFile>README-NUGET.md</PackageReadmeFile>
+		<RepositoryUrl>https://github.com/infocaster/urktrackerglobalblocklist</RepositoryUrl>
+		<PackageReleaseNotes>First release for Umbraco 10</PackageReleaseNotes>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+		<PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Umbraco.Cms.Web.Website" Version="10.0.1" />
+		<PackageReference Include="Umbraco.Cms.Web.BackOffice" Version="10.0.1" />
+		<PackageReference Include="UrlTracker" Version="10.0.2" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<None Include="build\**\*.*">
+			<Pack>True</Pack>
+			<PackagePath>buildTransitive</PackagePath>
+		</None>
+		<None Include="..\..\README-NUGET.md">
+			<Pack>True</Pack>
+			<PackagePath>\</PackagePath>
+		</None>
+		<None Include="..\..\readme.txt">
+			<Pack>True</Pack>
+			<PackagePath>\</PackagePath>
+		</None>
+		<None Include="..\..\infocaster_nuget_pink.png">
+			<Pack>True</Pack>
+			<PackagePath>\</PackagePath>
+		</None>
+	</ItemGroup>
+</Project>

@@ -1,0 +1,50 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32602.215
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UrlTracker.GlobalBlocklist", "src\UrlTracker.GlobalBlocklist\UrlTracker.GlobalBlocklist.csproj", "{F936C692-CB32-4B26-A0D1-29A560B8DF11}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{91C84983-62A0-4AEB-97D2-A2379BD4A6CD}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+		.gitignore = .gitignore
+		azure-pipelines.yml = azure-pipelines.yml
+		GitVersion.yml = GitVersion.yml
+		infocaster_nuget_pink.png = infocaster_nuget_pink.png
+		LICENSE = LICENSE
+		nuget.config = nuget.config
+		README-NUGET.md = README-NUGET.md
+		README.md = README.md
+		readme.txt = readme.txt
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{D5E00642-0A6D-41C0-A036-27C4CB587CFC}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UrlTracker.GlobalBlocklist.Website", "UrlTracker.GlobalBlocklist.Website\UrlTracker.GlobalBlocklist.Website.csproj", "{622EF6D3-3D5C-4CE6-9050-A2DFDF00FB77}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F936C692-CB32-4B26-A0D1-29A560B8DF11}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F936C692-CB32-4B26-A0D1-29A560B8DF11}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F936C692-CB32-4B26-A0D1-29A560B8DF11}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F936C692-CB32-4B26-A0D1-29A560B8DF11}.Release|Any CPU.Build.0 = Release|Any CPU
+		{622EF6D3-3D5C-4CE6-9050-A2DFDF00FB77}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{622EF6D3-3D5C-4CE6-9050-A2DFDF00FB77}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{622EF6D3-3D5C-4CE6-9050-A2DFDF00FB77}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{622EF6D3-3D5C-4CE6-9050-A2DFDF00FB77}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{622EF6D3-3D5C-4CE6-9050-A2DFDF00FB77} = {D5E00642-0A6D-41C0-A036-27C4CB587CFC}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {87E97441-12B5-4858-ABE1-E32CEF013EE3}
+	EndGlobalSection
+EndGlobal

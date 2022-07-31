@@ -1,20 +1,37 @@
-# Introduction 
-TODO: Give a short introduction of your project. Let this section explain the objectives or the motivation behind this project. 
+<h3 align="center">
+<img height="100" src="https://raw.githubusercontent.com/Infocaster/.github/main/assets/infocaster_nuget_yellow.svg">
+</h3>
 
-# Getting Started
-TODO: Guide users through getting your code up and running on their own system. In this section you can talk about:
-1.	Installation process
-2.	Software dependencies
-3.	Latest releases
-4.	API references
+<h1 align="center">
+UrlTracker GlobalBlocklist
 
-# Build and Test
-TODO: Describe and show how to build your code and run the tests. 
+</h1>
 
-# Contribute
-TODO: Explain how other users and developers can contribute to make your code better. 
+*This package is an extension of the UrlTracker. For more information about the UrlTracker please check out [our GitHub page](https://github.com/Infocaster/UrlTracker)*
 
-If you want to learn more about creating good readme files then refer the following [guidelines](https://docs.microsoft.com/en-us/azure/devops/repos/git/create-a-readme?view=azure-devops). You can also seek inspiration from the below readme files:
-- [ASP.NET Core](https://github.com/aspnet/Home)
-- [Visual Studio Code](https://github.com/Microsoft/vscode)
-- [Chakra Core](https://github.com/Microsoft/ChakraCore)
+## Requirements
+The UrlTracker.GlobalBlocklist package requires an installation of the UrlTracker with a minimal version of v10.
+
+
+## Getting started
+There is no configuration required to start using this package. By installing the package a filter is added that retreives the global [list](https://github.com/Infocaster/UrlTracker.GlobalSettings/blob/main/UrlTracker_globalSettings.json).
+
+We have tried to include as many items as possible in this list but if you feel that something is missing we highly encourage you to create a pull request so it can be added.
+
+## Good to know
+When the filter does not contain any items a request is made to get the list. This list is then cached for 24 hours.
+This means that the list is refreshed once a day, dependent on when the last restart of your application took place.
+
+## Credits
+Created by [Infocaster](https://infocaster.net)
+
+<a href="https://github.com/Infocaster/UrlTracker.GlobalBlocklist/graphs/contributors">
+<img src="https://contrib.rocks/image?repo=Infocaster/UrlTracker.GlobalBlocklist" />
+</a>
+
+*Made with [contributors-img](https://contrib.rocks).*
+-----
+
+<a href="https://infocaster.net">
+<img align="right" height="200" src="https://raw.githubusercontent.com/Infocaster/.github/main/assets/Infocaster_Corner.png?raw=true">
+</a>
