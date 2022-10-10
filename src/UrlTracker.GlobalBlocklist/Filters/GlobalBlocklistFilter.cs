@@ -1,9 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Caching.Memory;
+using Umbraco.Cms.Core.Models;
 using UrlTracker.GlobalBlocklist.Services;
-using UrlTracker.Web.Events.Models;
 using UrlTracker.Web.Processing;
 
 namespace UrlTracker.GlobalBlocklist.Filters
@@ -19,13 +20,9 @@ namespace UrlTracker.GlobalBlocklist.Filters
             _retreiveBlocklistService = retreiveBlocklistService;
         }
 
-        public ValueTask<bool> EvaluateCandidateAsync(UrlTrackerHandled notification)
-            => new ValueTask<bool>(EvaluateCandidate(notification));
-
-        public async Task<bool> EvaluateCandidate(UrlTrackerHandled notification)
+        public async ValueTask<bool> EvaluateCandidateAsync(HttpContext context)
         {
-            var url = notification.Url.ToString();
-
+            var url = string.Concat(context.Request.Scheme, "://", context.Request.Host, context.Request.Path, context.Request.QueryString);
             var blockedItems = _memoryCache.Get<List<string>>(Defaults.Cache.CacheKey);
 
             if (blockedItems == null)
