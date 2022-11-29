@@ -12,7 +12,7 @@ namespace UrlTracker.GlobalBlocklist.Composers
         public void Compose(IUmbracoBuilder builder)
         {
             builder.Services.AddHttpClient<RetrieveBlocklistService>();
-            builder.Services.AddSingleton<IRetrieveBlocklistService, RetrieveBlocklistService>();
+            builder.Services.AddSingleton<IRetrieveBlocklistService>(services => services.GetRequiredService<RetrieveBlocklistService>());
             builder.ClientErrorFilters()!
                 .Append<GlobalBlocklistFilter>();
         }
