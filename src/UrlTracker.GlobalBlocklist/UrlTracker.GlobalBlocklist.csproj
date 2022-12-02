@@ -1,6 +1,6 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 	<PropertyGroup>
-		<TargetFramework>net6.0</TargetFramework>
+		<TargetFramework>net7.0</TargetFramework>
 		<GenerateAssemblyInfo>false</GenerateAssemblyInfo>
 		<ContentTargetFolders>.</ContentTargetFolders>
 		<PackageId>UrlTracker.GlobalBlocklist</PackageId>
@@ -10,7 +10,7 @@
 		</Description>
 		<Product>UrlTracker.GlobalBlocklist</Product>
 		<Authors>Infocaster B.V.</Authors>
-		<PackageTags>umbraco plugin package urltracker net6 contentmanagement CMS umbraco-marketplace</PackageTags>
+		<PackageTags>umbraco plugin package urltracker net7 contentmanagement CMS umbraco-marketplace</PackageTags>
 		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
 		<RootNamespace>UrlTracker.GlobalBlocklist</RootNamespace>
 		<Copyright>Copyright © Infocaster 2022</Copyright>
@@ -18,15 +18,15 @@
 		<PackageIcon>infocaster_nuget_pink.png</PackageIcon>
 		<PackageReadmeFile>README-NUGET.md</PackageReadmeFile>
 		<RepositoryUrl>https://github.com/infocaster/urktrackerglobalblocklist</RepositoryUrl>
-		<PackageReleaseNotes>First release for Umbraco 10</PackageReleaseNotes>
+		<PackageReleaseNotes>First release for Umbraco 11</PackageReleaseNotes>
 		<PackageLicenseExpression>MIT</PackageLicenseExpression>
 		<PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
 	</PropertyGroup>
 
 	<ItemGroup>
-		<PackageReference Include="Umbraco.Cms.Web.Website" Version="10.0.1" />
-		<PackageReference Include="Umbraco.Cms.Web.BackOffice" Version="10.0.1" />
-		<PackageReference Include="UrlTracker.Web" Version="10.2.0" />
+		<PackageReference Include="Umbraco.Cms.Web.Website" Version="11.0.0" />
+		<PackageReference Include="Umbraco.Cms.Web.BackOffice" Version="11.0.0" />
+		<PackageReference Include="UrlTracker.Web" Version="11.0.0" />
 	</ItemGroup>
 
 	<ItemGroup>
